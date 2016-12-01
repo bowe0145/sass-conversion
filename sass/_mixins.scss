@@ -1,0 +1,12 @@
+@mixin calc_col_width($coltype) {
+    @if $coltype==4 {
+        width: 22%;
+        margin-left: 4%;
+    }
+    @else if $coltype==3 {
+        width: 30%;
+        margin-left: 5%;
+    }
+    @else {}
+    @content;
+}
